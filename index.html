@@ -6,7 +6,13 @@
 	<script src='js/three.min.js'></script>
 </head>
 <body>
-
+<select id="selectitem" onchange="RenderScene(this.value)">
+	<option value="Water">Select a molecule</option>
+	<option value="Water">Water</option>
+	<option value="Alcohol">Alcohol</option>
+	<option value="SodiumHydroxide">Sodium Hydroxide</option>
+</select>
+<script src='js/molecules.js'></script>	
 <script src='js/main.js'></script>	
 </body>
 </html>

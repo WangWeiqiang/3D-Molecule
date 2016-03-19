@@ -1,0 +1,175 @@
+Atom={
+	H:{color:0x009900,text:'H'},
+	O:{color:0x990000,text:'O'},
+	Fe:{color:0x000000,text:'Fe'},
+	C:{color:0x555555,text:'C'},
+	Na:{color:0x7214FF,text:'Na'}
+};
+
+Molecule={
+	Water:{
+		atoms:[
+			{
+				atom:Atom.O,
+				r:0.5,
+				pos:[0,0,0]				
+			},
+			{
+				atom:Atom.H,
+				r:0.4,
+				pos:[-1.58,1.22,0]
+			},
+			{
+				atom:Atom.H,
+				r:0.4,
+				pos:[1.58,1.22,0]
+			}
+		],
+		bonds:[
+			{
+				atom:[Atom.O,Atom.H],
+				from:[0,0,0],
+				to:[-1.58,1.22,0],
+			},
+			{
+				atom:[Atom.O,Atom.H],
+				from:[0,0,0],
+				to:[1.58,1.22,0],
+			}
+		]
+	},
+
+	Alcohol:{
+		atoms:[
+			{
+				atom:Atom.C,
+				r:0.4,
+				pos:[-0.5,0,0]				
+			},
+			{
+				atom:Atom.C,
+				r:0.4,
+				pos:[0.5,0,0]
+			},
+
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[-0.8,1,0]
+			},
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[-0.8,-0.5,0.86]
+			},
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[-0.8,-0.50,-0.86]
+			},
+
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[0.8,0.50,0.86]
+			},
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[0.8,0.50,-0.86]
+			},
+			{
+				atom:Atom.O,
+				r:0.4,
+				pos:[0.8,-1,0]
+			},
+			{
+				atom:Atom.H,
+				r:0.3,
+				pos:[0.7,-1,1]
+			}
+
+
+		],
+		bonds:[
+			{
+				atom:[Atom.C,Atom.C],
+				from:[-0.5,0,0],
+				to:[0.5,0,0]
+			},
+			{
+				atom:[Atom.C,Atom.H],
+				from:[-0.5,0,0],
+				to:[-0.8,1,0]
+			},
+			{
+				atom:[Atom.C,Atom.H],
+				from:[-0.5,0,0],
+				to:[-0.8,-0.5,0.86]
+			},
+			{
+				atom:[Atom.C,Atom.H],
+				from:[-0.5,0,0],
+				to:[-0.8,-0.50,-0.86]
+			},
+
+			{
+				atom:[Atom.C,Atom.H],
+				from:[0.5,0,0],
+				to:[0.8,0.50,0.86]
+			},
+			{
+				atom:[Atom.C,Atom.H],
+				from:[0.5,0,0],
+				to:[0.8,0.50,-0.86]
+			},
+			{
+				atom:[Atom.C,Atom.O],
+				from:[0.5,0,0],
+				to:[0.8,-1,0]
+			},
+			{
+				atom:[Atom.O,Atom.H],
+				from:[0.8,-1,0],
+				to:[0.7,-1,1]
+			}
+
+
+		]
+	},
+
+	SodiumHydroxide:
+	{
+		atoms:[
+			{
+				atom:Atom.Na,
+				r:0.4,
+				pos:[-0.8,0.3,0]				
+			},
+			{
+				atom:Atom.O,
+				r:0.3,
+				pos:[0,0,0]
+			},
+			{
+				atom:Atom.H,
+				r:0.2,
+				pos:[0.8,0.3,0]
+			}
+		],
+		bonds:[
+			{
+				atom:[Atom.O,Atom.Na],
+				from:[0,0,0],
+				to:[-0.8,0.3,0]
+			},
+			{
+				atom:[Atom.O,Atom.H],
+				from:[0,0,0],
+				to:[0.8,0.3,0]
+			}
+		]
+	}
+
+	
+};
